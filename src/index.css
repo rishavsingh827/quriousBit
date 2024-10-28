@@ -1,0 +1,143 @@
+/* Body styling to set background color */
+body {
+  background: linear-gradient(to bottom right, #e0f7fa, #f0f4f8); /* Light gradient from cyan to light gray-blue */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+/* Header container styling */
+/* Center header container */
+.header-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Stack header and search bar vertically */
+  padding: 20px;
+}
+
+/* Header styling */
+.header {
+  text-align: center; /* Center text inside header */
+}
+
+/* Search Bar styling */
+/* Search Bar styling */
+.search-bar {
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Set a maximum width */
+  padding: 10px 15px; /* Add some padding for better spacing */
+  margin-top: 10px; /* Space between title and search bar */
+  border-radius: 25px; /* Rounded corners for a softer look */
+  border: 1px solid #ccc; /* Light border */
+  outline: none; /* Remove the default outline */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 16px; /* Increase font size for better readability */
+  transition: border 0.3s, box-shadow 0.3s; /* Smooth transition for focus effects */
+}
+
+/* Search Bar focus effect */
+.search-bar:focus {
+  border: 1px solid #3498db; /* Change border color on focus */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5); /* Enhanced shadow on focus */
+}
+
+/* Optional: Add a placeholder style for better visibility */
+.search-bar::placeholder {
+  color: #aaa; /* Lighter color for placeholder */
+  opacity: 0.8; /* Slightly transparent */
+}
+
+
+/* Event List styling */
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center; /* Center the cards in the list */
+}
+
+/* EventCard styling */
+.event-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex; /* Center content inside card */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* EventModal styling */
+.event-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-modal {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 8px;
+  position: relative;
+  display: flex; /* Center content inside modal */
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center children horizontally */
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 50%; /* Makes the button circular */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a 3D effect */
+  transition: background 0.3s, transform 0.2s; /* Smooth transitions */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-button:hover {
+  background: #2980b9; /* Darker blue on hover */
+}
+
+.close-button:active {
+  transform: scale(0.9); /* Scale down slightly when clicked */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+}
+
+.event-image {
+  width: 100%; /* Ensures image takes full width of container */
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Crops image to fit within width and height */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
