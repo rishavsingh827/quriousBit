@@ -71,7 +71,10 @@ body {
   flex-direction: column; /* Align children in a column */
   align-items: center; /* Center children horizontally */
   justify-content: center; /* Center children vertically */
+  background-color: #ffffff; /* Change this color to your desired background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
 }
+
 
 .event-card:hover {
   transform: scale(1.05);
